@@ -5,9 +5,18 @@ $mainGrey: #EEEEEE;
 $secondaryGray: #DDD;
 $hoverColor: #2AD2B0;
 
+$hambasewidth: 15px;
+$hamsizemultiplier: 2;
+
 // --------------------MIXINS----------------------
 @mixin atMedium {
-    @media (min-width: 800px){
+    @media (min-width: 875px){
+        @content;
+    }
+}
+
+@mixin atSmall {
+    @media (max-width: 640px){
         @content;
     }
 }
@@ -49,26 +58,21 @@ color:$hoverColor;
     padding-top: 120px;
 }
 // -------------------HEADER STYLES----------------
-
-#menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 43px 40px 10px 10px;
-}
-
 .site-header {
     position: fixed;
-    top: -17px;
+    top: -3px;
     left: 0;
     right: 0;
+    z-index: 10;
 
+    @include clearfix;
     &__nav {
         position: relative;
+ 
         ul {
             list-style-type: none;
             padding: 0;
-
+            margin: 0;
             li {
                 padding: 20px 0px;
                 margin: 0px 10px;
@@ -77,18 +81,34 @@ color:$hoverColor;
 
             li:last-child {
                 border: none;
+
             }
         }
 
     }
 
+    &__text-area {
+        position: relative;
+    }
+
     &__site-name {
         font-size: 2rem;
-        padding-left: 40px;
+        margin-left: 40px;
+        width: 150px;
+        float: left;
+        padding-right: 5%;
     }
 
     &__description {
+        float: left;
+        width: 200px;
+        margin: 33px 0 0 0;
+        color: $secondaryBlack;
         display: none;
+
+        @include atMedium {
+            display: inline-block;
+        }
     }
 
     &__right {
@@ -99,12 +119,14 @@ color:$hoverColor;
 
     &__left {
         position: relative;
-        top: -16px;
+        top: 0px;
         background: #fff;
         transform: translateY(0);
         transition: all 0.3s ease;
         text-align: left;
-        padding: 10px 0px;
+        padding: 0px;
+        width: 100%;
+        height: 80px;
     }
 }
 
@@ -114,5 +136,57 @@ color:$hoverColor;
 
 .left-toggled {
     transform: translateY(-250%);
+    position: relative;
+    top: -36px;
 }
 
+//Hamburger icon
+
+.hamburger {
+    width: $hambasewidth * $hamsizemultiplier;
+    height: 22.5px * $hamsizemultiplier;
+    position: absolute;
+    cursor: pointer;
+    padding: 21px;
+    margin-right: 40px;
+    right: 0;
+    top: 0;
+    span {
+      display: block;
+      position: absolute;
+      height: 2.22px * $hamsizemultiplier;
+      width: 100%;
+      background: $hoverColor none repeat scroll 0% 0%;
+      opacity: 1;
+      right: 0px;
+      transition: all 0.3s ease-in-out 0s;
+      transform: rotate(0deg);
+      border-radius: 3px;
+      &:nth-child(1) {
+        margin-top: 0px;
+      }
+      &:nth-child(2) {
+        margin-top: 8px * $hamsizemultiplier;
+        margin-right: 0px;
+      }
+      &:nth-child(3) {
+        margin-top: 16px * $hamsizemultiplier;
+      }
+    }
+    &.opened {
+      span {
+        &:nth-child(1) {
+          transform: rotate(135deg);
+          margin-top: 8px * $hamsizemultiplier;
+        }
+        &:nth-child(2) {
+          opacity: 0;
+          right: -$hambasewidth * 3;
+        }
+        &:nth-child(3) {
+          transform: rotate(-135deg);
+          margin-top: 8px * $hamsizemultiplier;
+        }
+      }
+    }
+  }

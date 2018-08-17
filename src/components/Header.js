@@ -37,10 +37,16 @@ class Header extends Component {
                     </nav>
                 
                     <div className={ this.state.condition ? "site-header__left" : "site-header__left left-toggled" }>
-                        <h1 className="site-header__site-name"><a href="">A. FILINOV</a></h1>
-                        <div className="site-header__description">Front-end developer</div>
-                        <a href="" id="menu"
-                        onClick={ this.handleClick }>Menu <FontAwesomeIcon icon="coffee" /></a>
+                    <div className="site-header__text-area">
+                        <h1 className="site-header__site-name"><a href="">FILINOV</a></h1>
+                        <p className="site-header__description">Front-end developer</p>
+                    </div>    
+                        <div onClick={ this.handleClick }
+                             className= { this.state.condition ? "hamburger opened" : "hamburger" }>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
 
              </header>
