@@ -45,13 +45,14 @@ a {
     color: $primaryBlack; 
     transition: all 0.3s ease;  
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 1.5px;
    }
 
 a:hover {
 text-decoration: none;
 color:$hoverColor;
+cursor: pointer;
 }
 // ---- TEST ----
 .test {
@@ -68,7 +69,7 @@ color:$hoverColor;
     @include clearfix;
     &__nav {
         position: relative;
- 
+        overflow: hidden;
         ul {
             list-style-type: none;
             padding: 0;
@@ -189,4 +190,64 @@ color:$hoverColor;
         }
       }
     }
+  }
+ 
+
+  // ------------------FOOTER STYLES------------------
+  .site-footer{
+      position: relative;
+      border-top: 1px solid $mainGrey;
+      line-height: 25px;
+      padding-bottom: 15px;
+      
+      &__nav-container{
+          position: relative;
+          padding: 0px 30px;
+          @include atMedium {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+          }
+          ul{
+              list-style-type: none;
+              padding-left: 0;
+              margin-left: 0;
+              
+                li{
+                    display: inline-block;
+                    padding: 0px 10px;
+                }
+          }
+      }
+
+      &__link-nav {
+          ul {
+              padding-top: 12px;
+          }
+          @include atMedium{
+              width: 50%;
+              vertical-align: top;
+              float: left;
+              text-align: left;
+              min-height: 75.99;
+              @include clearfix;
+          }
+      }
+
+      &__social-nav{
+          font-size: 25px;
+          @include atMedium{
+            width: 50%;
+            vertical-align: top;
+            float: left;
+            text-align: right;
+          }
+          @include clearfix;
+        }
+
+      &__copyright {
+          width: 100%;
+          font-size: 0.7rem;
+          color: $secondaryBlack;
+      }
   }

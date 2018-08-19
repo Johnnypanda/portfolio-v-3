@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import 'normalize.css';
 import './App.css';
-
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -27,7 +28,8 @@ class App extends Component {
         Aenean nec bibendum massa, sed rutrum ex. Etiam auctor sollicitudin mi quis iaculis. Donec ante enim, gravida vel suscipit sit amet, sodales non massa. Donec eget magna placerat massa venenatis suscipit a at ipsum. Integer nibh tortor, auctor vel mauris non, pharetra pretium ipsum. Etiam non massa tortor. Pellentesque fringilla dui hendrerit diam convallis, eget vestibulum lacus semper. Aliquam et sapien urna.
         
         Integer eget ex congue, aliquam lorem ac, tempus sapien. Nunc laoreet lacinia ligula malesuada rhoncus. Mauris finibus sapien sed ligula ornare fermentum. Nunc id finibus quam. Nullam sit amet nunc ut ex pharetra bibendum. In id ultrices odio. Etiam cursus dolor eu sem scelerisque, vitae cursus mi consectetur. Curabitur nisl velit, tempus vitae sem et, fringilla blandit ante. In tempus augue nec eros feugiat, sit amet consectetur dolor ultrices. Donec eu est vitae elit ultricies mattis. Vivamus eget sapien quis diam pharetra commodo et in augue. In viverra lorem ut urna ullamcorper condimentum. Phasellus in arcu eget nulla tempor finibus at sed nunc. In sit amet nisi enim. Sed finibus purus id vulputate venenatis.</p>
-      </div>
+        <Footer />
+        </div>
     );
   }
 }

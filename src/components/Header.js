@@ -1,11 +1,4 @@
 import React, { Component } from 'react';
-//Font awesome packages
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
-//Add icons
-library.add(faCoffee)
 
 class Header extends Component {
     constructor(props) {
