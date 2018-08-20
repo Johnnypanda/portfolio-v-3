@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import 'normalize.css';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -11,7 +10,7 @@ class App extends Component {
         <Header />
         <p className="test">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae velit at justo gravida egestas eget eget mauris. Quisque ante mi, consequat sit amet magna convallis, luctus volutpat turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque sollicitudin, diam id mattis egestas, nibh odio condimentum libero, et varius turpis dolor non turpis. Suspendisse vel pharetra quam. Sed placerat volutpat elementum. Vestibulum lorem nulla, efficitur eget ex quis, malesuada hendrerit augue. Sed tincidunt lacinia quam, vitae volutpat est aliquam et. Curabitur elementum sit amet diam at convallis. Vestibulum faucibus finibus risus, id maximus ex sollicitudin nec. Etiam et tincidunt lectus.
 
-        Pellentesque congue purus ornare lacus condimentum suscipit quis eu urna. In hac habitasse platea dictumst. Vivamus commodo, nibh quis porttitor luctus, sapien enim aliquet est, eget luctus nibh neque a arcu. Cras tortor justo, sodales sed enim sit amet, euismod sollicitudin neque. Vestibulum sapien mauris, dapibus eget aliquam in, consequat sed tellus. Proin sit amet diam a ex posuere rhoncus. Donec facilisis at enim et hendrerit. Vivamus non ornare lorem.
+        Pellentesque congue purus <a>Ipsum </a> ornare lacus condimentum suscipit quis eu urna. In hac habitasse platea dictumst. Vivamus commodo, nibh quis porttitor luctus, sapien enim aliquet est, eget luctus nibh neque a arcu. Cras tortor justo, sodales sed enim sit amet, euismod sollicitudin neque. Vestibulum sapien mauris, dapibus eget aliquam in, consequat sed tellus. Proin sit amet diam a ex posuere rhoncus. Donec facilisis at enim et hendrerit. Vivamus non ornare lorem.
         
         Sed auctor elit vel orci cursus ultrices. Nulla auctor tortor vel velit lacinia posuere. Vestibulum eleifend risus vitae purus luctus, sit amet congue sapien tincidunt. Morbi ut erat sem. Ut feugiat vestibulum risus, a blandit leo sollicitudin non. Vestibulum vehicula tristique ligula at blandit. Nunc auctor nisl et enim sollicitudin, sed accumsan nibh faucibus. Nullam tortor nisi, luctus ut arcu vel, tempor finibus risus.
         

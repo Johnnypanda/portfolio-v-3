@@ -17,9 +17,9 @@ class Header extends Component {
 
     render(){
         return(
-            <header className="site-header">
+            <header className={ this.state.condition ? "site-header" : "site-header visible" }>
                     <nav className="site-header__nav" id="main-nav">
-                        <div className= { this.state.condition ? "site-header__right" : "site-header__right right-toggled" }>
+                        <div className="site-header__right">
                             <ul>
                                 <li><a href="">Portfolio</a></li>
                                 <li><a href="">About</a></li>
@@ -29,7 +29,7 @@ class Header extends Component {
                         </div>
                     </nav>
                 
-                    <div className={ this.state.condition ? "site-header__left" : "site-header__left left-toggled" }>
+                    <div className="site-header__left">
                     <div className="site-header__text-area">
                         <h1 className="site-header__site-name"><a href="">FILINOV</a></h1>
                         <p className="site-header__description">Front-end developer</p>
