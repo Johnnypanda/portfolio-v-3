@@ -61,10 +61,23 @@ color:$hoverColor;
 cursor: pointer;
 }
 
-// ---- TEST ----
-.test {
-    padding-top: 120px;
+// ---- First section ----
+.first {
+    padding: 100px 40px 40px 40px;
 }
+// ---- Section rules -----
+.section-content {
+    text-align: left;
+    h2 {
+        font-size: 4rem;
+        margin: -5px;
+
+    }
+    p {
+        color: $secondaryBlack;
+    }
+}
+
 // -------------------HEADER STYLES----------------
 .site-header {
     background: #333;
@@ -241,4 +254,35 @@ cursor: pointer;
 
   .visible {
       top: -235px;
+  }
+  // ---------------- GRID -----------------
+  .grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include atMedium {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include atSmall {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .grid-item {
+    text-align: center;
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        p{
+            color: $secondaryBlack;
+            font-size: 0.7rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        h3{
+            margin-bottom: 10px;
+        }
   }
