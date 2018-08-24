@@ -12,7 +12,7 @@ class Portfolio extends Component {
                 {this.props.projects.map((project) => (
                     <div key={project.name} className="grid-item">
                     <article>
-                        <a>
+                        <a href={project.url} target="_blank">
                             <figure>
                                 <img alt={project.name} src={project.image}/>
                                 <div className="portfolio_arrow">
