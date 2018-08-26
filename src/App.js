@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Home from './components/Home';
 import Portfolio from './components/Portfolio';
+import { Route } from 'react-router-dom'
 
 class App extends Component {
   constructor(props) {
@@ -72,7 +74,12 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <Route exact path={`/portfolio`} render={() => (
         <Portfolio projects={this.state.projects} />
+      )}/>
+      <Route exact path={`/`} render={() => (
+        <Home />
+      )}/>
         <Footer />
         </div>
     );

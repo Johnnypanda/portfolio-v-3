@@ -60,6 +60,14 @@ text-decoration: none;
 color:$hoverColor;
 cursor: pointer;
 }
+// ---- WRAPPER ---------
+
+.wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: $mainGrey;
+}
 
 // ---- First section ----
 .first {
@@ -87,7 +95,7 @@ cursor: pointer;
     right: 0;
     z-index: 10;
     height: 125px;
-    transition: top 0.2s ease-in-out;
+    transition: top 0.3s ease-in-out;
 
     &__nav{
         ul{
@@ -191,11 +199,32 @@ cursor: pointer;
       }
     }
   }
- 
+ // -------------- OVERLAY ------------------
+ .overlay {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    background: rgba($primaryBlack, 0.8);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+
+    &__visible{
+        z-index: 9;
+        opacity: 1;
+        display: block;
+        cursor: pointer;
+    }
+}
 
   // ------------------FOOTER STYLES------------------
   .site-footer{
-      position: relative;
+      display: block;
       border-top: 1px solid $mainGrey;
       line-height: 25px;
       padding-bottom: 15px;
