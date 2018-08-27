@@ -3,8 +3,12 @@ import React, { Component } from 'react';
 class Home extends Component {
     render(){
         return(
-            <section>
-                <h2>LOREM IPSUm!</h2>
+            <section className="site-home first">
+                <div className="site-home__hero-container">
+                     <div className="site-home__hero">
+                        <div className="site-home__hero--logo"></div>
+                     </div>
+                </div>
             </section>
         )
     }
