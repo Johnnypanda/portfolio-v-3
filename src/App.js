@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 import { Route } from 'react-router-dom'
-
+import ScrollToTop from './components/ScrollToTop';
 class App extends Component {
   constructor(props) {
     super(props);
@@ -72,16 +72,18 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Route exact path={`/portfolio`} render={() => (
-        <Portfolio projects={this.state.projects} />
-      )}/>
-      <Route exact path={`/`} render={() => (
-        <Home />
-      )}/>
-        <Footer />
-        </div>
+      <ScrollToTop>
+        <div className="App">
+          <Header />
+          <Route exact path={`/portfolio`} render={() => (
+          <Portfolio projects={this.state.projects} />
+        )}/>
+        <Route exact path={`/`} render={() => (
+          <Home />
+        )}/>
+          <Footer />
+          </div>
+        </ScrollToTop>
     );
   }
 }
