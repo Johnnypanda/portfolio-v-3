@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 import { Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop';
 class App extends Component {
@@ -80,6 +81,9 @@ class App extends Component {
         )}/>
         <Route exact path={`/`} render={() => (
           <Home />
+        )}/>
+        <Route exact path={`/contact`} render={() => (
+          <Contact />
         )}/>
           <Footer />
           </div>

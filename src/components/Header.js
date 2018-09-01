@@ -30,8 +30,8 @@ class Header extends Component {
                             <div className="site-header__right">
                                 <ul>
                                     <li onClick={ this.linkClick }><Link to={`/portfolio`}>Portfolio</Link></li>
-                                    <li><a href="">About</a></li>
-                                    <li><a href="">Contact</a></li>
+                                    <li onClick={ this.linkClick }><Link to={`/about`}>About</Link></li>
+                                    <li onClick={ this.linkClick }><Link to={`/contact`}>Contact</Link></li>
                                     <li className=""><a className="" href=""><span className="">Blog</span></a></li>
                                 </ul>
                             </div>

@@ -4,6 +4,7 @@ $secondaryBlack: #A7A7A7;
 $mainGrey: #EEEEEE;
 $secondaryGray: #DDD;
 $hoverColor: #2AD2B0;
+$hoverColorDarker: #2ab295;
 $textColor: #515151;
 
 $hambasewidth: 15px;
@@ -456,3 +457,43 @@ cursor: pointer;
         }
       }
   }
+
+  //---------------- CONTACT ----------------------
+.site-contact {
+    &__content {
+        p{
+            font-size: 2rem;
+        }
+    }
+
+    &__form{
+
+        max-width: 600px;
+
+        h3{
+            text-align: left;
+            font-size: 2rem;
+        }
+        input, textarea {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 15px ;
+        }
+
+        button {
+            display: block;
+            width: 180px;
+            height: 60px;
+            background: $hoverColor;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover{
+            background: $hoverColorDarker;
+        }
+    }
+}
