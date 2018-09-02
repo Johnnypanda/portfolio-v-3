@@ -29,7 +29,7 @@ class Home extends Component {
                         I specialize in responsive web design and development.
                         My belief is that we can make internet better together by collaborating and creating
                         beautiful and functional websites.</p>
-                        <p><a><span className="site-home__icon"><FontAwesomeIcon icon="arrow-circle-right" /></span>About me</a></p>
+                        <p><Link to={`/about`}><span className="site-home__icon"><FontAwesomeIcon icon="arrow-circle-right" /></span>About me</Link></p>
                     </div>
                 </div>
             </section>

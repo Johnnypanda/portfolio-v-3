@@ -13,7 +13,7 @@ class Contact extends Component {
             <section className="first site-contact">
                 <div className="section-content site-contact__content">
                     <h2>Contact</h2>
-                    <p>If you are interested in collaborating, want to hire me or just have a chat, feel free to contact
+                    <p className="section-content--grey">If you are interested in collaborating, want to hire me or just have a chat, feel free to contact
                     me. I don't bite. 😉</p>
                    
                 </div>

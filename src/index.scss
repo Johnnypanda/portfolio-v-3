@@ -85,11 +85,83 @@ cursor: pointer;
     h2 {
         font-size: 4rem;
         margin: -5px;
-
+        padding-left: 5px;
     }
-    p {
+
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+
+        li{
+            margin-left: 0;
+        }
+    }
+
+    &__wrapper {
+        @include atMedium {
+            width: 70%;
+        }
+    }
+
+    &--grey {
         color: $secondaryBlack;
     }
+
+    &__lead{
+        color: $hoverColor;
+        font-size: 1.3rem;
+
+        @include atMedium {
+            font-size: 2rem;
+        }
+    }
+
+    &__columns{
+        letter-spacing: 1px;
+        line-height: 23px;
+        color: #333;
+        
+        @include atMedium {
+            p{
+                width: 50%;
+                float: left;
+                padding-right: 10px;
+            }
+
+            @include clearfix;
+        }
+    }
+
+    &__skills {
+        width: 100%;
+        
+        &__item {
+            display: block;
+            height: 200px;
+            width: 50%;
+            float: left;
+            
+            h3 {
+                height: 35px;
+
+            }
+
+            ul{
+                display: block;
+                color: $textColor;
+
+                li{
+                    padding-top: 5px;
+                }
+            }
+
+            @include atMedium{
+                width: 20%;
+            }
+        }
+    }
+
+    @include clearfix;
 }
 
 //------------------- KEYFRAMES -----------------
@@ -467,7 +539,7 @@ cursor: pointer;
     }
 
     &__form{
-
+        
         max-width: 600px;
 
         h3{
@@ -479,6 +551,8 @@ cursor: pointer;
             width: 100%;
             margin: 10px 0;
             padding: 15px ;
+            border: 1px solid $secondaryBlack;
+            border-radius: 5px;
         }
 
         button {

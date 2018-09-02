@@ -7,7 +7,7 @@ class Portfolio extends Component {
                 <section className="first portfolio">
                     <div className="section-content">
                         <h2>Portfolio</h2>
-                        <p>Take a look at some of my projects</p>
+                        <p className="section-content--grey">Take a look at some of my projects</p>
                     </div>
                     <div className="grid-container">
                         {this.props.projects.map((project) => (
