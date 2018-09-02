@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 //Font awesome packages
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -14,10 +15,10 @@ class Footer extends Component {
                 <div className="site-footer__nav-container">
                     <nav className="site-footer__link-nav">
                         <ul>
-                            <li><a>Portfolio</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Contact</a></li>
-                            <li><a>Blog</a></li>
+                            <li><Link to={`/portfolio`}>Portfolio</Link></li>
+                            <li><Link to={`/about`}>About</Link></li>
+                            <li><Link to={`/contact`}>Contact</Link></li>
+                            <li><a href="https://blog.artemfilinov.com/" target="_blank" rel="noopener noreferrer">Blog</a></li>
                         </ul>
                     </nav>
 

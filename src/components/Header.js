@@ -32,7 +32,7 @@ class Header extends Component {
                                     <li onClick={ this.linkClick }><Link to={`/portfolio`}>Portfolio</Link></li>
                                     <li onClick={ this.linkClick }><Link to={`/about`}>About</Link></li>
                                     <li onClick={ this.linkClick }><Link to={`/contact`}>Contact</Link></li>
-                                    <li className=""><a className="" href=""><span className="">Blog</span></a></li>
+                                    <li><a href="https://blog.artemfilinov.com/" target="_blank" rel="noopener noreferrer"><span>Blog</span></a></li>
                                 </ul>
                             </div>
                         </nav>

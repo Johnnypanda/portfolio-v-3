@@ -20,13 +20,13 @@ class App extends Component {
           url: 'https://johnnypanda.github.io/travel-site/'
         },
         {
-          name: 'Portfolio site v 2.0',
+          name: 'Portfolio Site Template',
           image: '/images/portfolio-2.png',
           description: 'JavaScript, Webpack, Babel, Scss, PostCss',
           url: ''
         },
         {
-          name: 'Portfolio site v 1.0',
+          name: 'Portfolio Site Template 2',
           image: '/images/portfolio-1.png',
           description: 'HTML, CSS, Bootstrap, jQuery',
           url: 'https://johnnypanda.github.io/portfolio-v-1/'

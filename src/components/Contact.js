@@ -1,11 +1,4 @@
 import React, { Component } from 'react';
-//Font awesome packages
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab, faFacebook, faInstagram, faGithub, faLinkedin  } from '@fortawesome/free-brands-svg-icons';
-
-//Add icons
-library.add(fab, faFacebook, faInstagram, faGithub, faLinkedin )
 
 class Contact extends Component {
     render(){
@@ -13,8 +6,8 @@ class Contact extends Component {
             <section className="first site-contact">
                 <div className="section-content site-contact__content">
                     <h2>Contact</h2>
-                    <p className="section-content--grey">If you are interested in collaborating, want to hire me or just have a chat, feel free to contact
-                    me. I don't bite. 😉</p>
+                    <p className="section-content--grey">If you are interested in collaborating, want to hire me or just to have a chat, feel free to contact
+                    me. I don't bite. <span role="img" aria-label="winky emoji">😉</span></p>
                    
                 </div>
                     <div className="site-contact__info">

@@ -14,11 +14,20 @@ class About extends Component {
                   </p>
                   <div className="section-content__columns">
                     <p>
-                    From the largest of buildings to the smallest of logos, we traverse different design disciplines with one united vision: to tell stories through our designs in a beautiful, fun and innovative way. These stories are what makes our designs charasmatic, engaging, unexpected and ultimately, sincere. All of our projects are imbued with a concept that stems from a period of intense research to ensure that your project is not only beautiful and functional but most importantly, meaningful. We believe that there has to be more to design than just an endless rearrangement of lines, objects and colours.
-                    We are inspired by people, emotion and life experiences; from the burning neon euphoria of being in the city for the first time to briny, windswept holidays by the seaside. Our design solutions are sometimes a little left-of-centre, often drawing from design sensibilities from the past and splicing them with cutting edge technology, giving all our projects a highly bespoke personality that not only fulfils the brief, but exceeds it.
+                    Few years ago, I started experimenting with HTML and CSS. I became very fond of coding and minimalistic designs. Since then I am trying to become better at what I do.
+
+                    I am a relentless learner. What I love most about front-end development is the constant changes in the field especially it's evolution in the last couple of years.
                     </p>
                     <p>
-                    We love working with all types of clients, from start-ups businesses to global brands, and in the short time since our establishment, we have worked with American Express, Virgin, De Beers, Kiplinger’s Personal Finance magazine and Imogen Heap. Above everything else, we believe that all design, from its inception to the final product should have an element of joy about it – for both you and for us. After all, design is an escape from the futility of modern life, not an endorsement of it.
+                    I love working and collaborating with people. 
+                    For me it does not matter whether the client wants me to create a site based on content management system, such as
+                    WordPress or completely from scratch. I always do my best to match and exceed expectations and appreciate 
+                    when people tell the truth.
+                    </p>
+                    <p>
+                        I have a degree in teaching English language as a second language and on the way of receiving master's
+                        degree in logistics. I came a long way before I understood what I like to do. This is why I value every
+                        bit of knowledge and experience I get. Below is the list of things I learned for the last year.
                     </p>
                   </div>
                   <div className="section-content section-content__skills">
@@ -33,7 +42,7 @@ class About extends Component {
                             </ul>
                         </div>
                         <div className="section-content__skills__item">
-                        <h3>Libraries and frameworks</h3>
+                        <h3>Frameworks &amp; Libraries</h3>
                         <ul>
                             <li>React JS</li>
                             <li>Bootstrap</li>
@@ -44,7 +53,7 @@ class About extends Component {
                         <h3>Tools</h3>
                             <ul>
                                 <li>Git</li>
-                                <li>Gulp / Grunt / Npm scripts</li>
+                                <li>Gulp / npm scripts</li>
                                 <li>Webpack</li>
                                 <li>Babel</li>
                             </ul>
@@ -58,7 +67,7 @@ class About extends Component {
                             </ul>
                         </div>
                         <div className="section-content__skills__item">
-                        <h3>Best practices and methodologies</h3>
+                        <h3>Practices &amp; Methodologies</h3>
                             <ul>
                                 <li>KISS</li>
                                 <li>DRY</li>
