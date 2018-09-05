@@ -11,16 +11,9 @@ class Contact extends Component {
                    
                 </div>
                     <div className="site-contact__info">
-                        
-                        <div className="site-contact__form">
-                            <h3>Send me a message</h3>
-                            <form action="">
-                            <input type="text" name="name" placeholder="Your Name" />
-                            <input type="email" name="e-mail" placeholder="E-mail Adress" />
-                            <textarea name="text" id="" rows="8" placeholder="Your Message"></textarea>
-                            <button class="btn-send">Send a message</button>
-                            </form>
-                        </div>
+                        <h3>Send me a message</h3>
+                        <a href="mailto:afilinov93@gmail.com">afilinov93@gmail.com</a>
+
                     </div>
             </section>
         )

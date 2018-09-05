@@ -62,6 +62,20 @@ text-decoration: none;
 color:$hoverColor;
 cursor: pointer;
 }
+
+// --- ROUTE TRANSITIONS
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+  }
+
+
 // ---- WRAPPER ---------
 
 .wrapper {
@@ -190,7 +204,7 @@ cursor: pointer;
     right: 0;
     z-index: 10;
     height: 125px;
-    transition: top 0.3s ease-in-out;
+    transition: top 0.2s ease-in;
     will-change: height;
 
     &__nav{
@@ -542,14 +556,26 @@ cursor: pointer;
         }
     }
 
+    &__info {
+        padding-bottom: 30px;
+        text-align: left;
+        h3{
+            font-size: 2rem;
+        }
+
+        a {
+        font-size: 4rem;
+        color: $hoverColor;
+        }
+
+        a:hover {
+            color: $hoverColorDarker;
+        }
+    }
+
     &__form{
         
         max-width: 600px;
-
-        h3{
-            text-align: left;
-            font-size: 2rem;
-        }
         input, textarea {
             display: block;
             width: 100%;

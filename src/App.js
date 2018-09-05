@@ -6,8 +6,11 @@ import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import About from './components/About';
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop';
+
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -74,24 +77,36 @@ class App extends Component {
 
   render() {
     return (
-      <ScrollToTop>
-        <div className="App">
-          <Header />
-          <Route exact path={`/portfolio`} render={() => (
-          <Portfolio projects={this.state.projects} />
-        )}/>
-        <Route exact path={`/`} render={() => (
-          <Home />
-        )}/>
-        <Route exact path={`/about`} render={() => (
-          <About />
-        )}/>
-        <Route exact path={`/contact`} render={() => (
-          <Contact />
-        )}/>
-          <Footer />
-          </div>
-        </ScrollToTop>
+      <Route render={({ location }) =>( 
+        <TransitionGroup>
+        <CSSTransition
+          key={location.key}
+          timeout={300}
+          classNames='fade'
+        >
+          <Switch location={location}>
+            <ScrollToTop>
+              <div className="App">
+                <Header />
+                <Route exact path={`/portfolio`} render={() => (
+                <Portfolio projects={this.state.projects} />
+              )}/>
+              <Route exact path={`/`} render={() => (
+                <Home />
+              )}/>
+              <Route exact path={`/about`} render={() => (
+                <About />
+              )}/>
+              <Route exact path={`/contact`} render={() => (
+                <Contact />
+              )}/>
+                <Footer />
+                </div>
+              </ScrollToTop>
+          </Switch>
+          </CSSTransition>
+        </TransitionGroup>
+      )} />
     );
   }
 }
