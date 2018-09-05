@@ -81,7 +81,7 @@ class App extends Component {
         <TransitionGroup>
         <CSSTransition
           key={location.key}
-          timeout={300}
+          timeout={500}
           classNames='fade'
         >
           <Switch location={location}>
@@ -89,17 +89,17 @@ class App extends Component {
               <div className="App">
                 <Header />
                 <Route exact path={`/portfolio`} render={() => (
-                <Portfolio projects={this.state.projects} />
-              )}/>
-              <Route exact path={`/`} render={() => (
-                <Home />
-              )}/>
-              <Route exact path={`/about`} render={() => (
-                <About />
-              )}/>
-              <Route exact path={`/contact`} render={() => (
-                <Contact />
-              )}/>
+                  <Portfolio projects={this.state.projects} />
+                )}/>
+                <Route exact path={`/`} render={() => (
+                  <Home />
+                )}/>
+                <Route exact path={`/about`} render={() => (
+                  <About />
+                )}/>
+                <Route exact path={`/contact`} render={() => (
+                  <Contact />
+                )}/>
                 <Footer />
                 </div>
               </ScrollToTop>

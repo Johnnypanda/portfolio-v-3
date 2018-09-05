@@ -24,10 +24,10 @@ class Footer extends Component {
 
                     <nav className="site-footer__social-nav">
                         <ul>
-                            <li><a><FontAwesomeIcon icon={['fab', 'facebook']} /></a></li>
-                            <li><a><FontAwesomeIcon icon={['fab', 'instagram']} /></a></li>
-                            <li><a><FontAwesomeIcon icon={['fab', 'github']} /></a></li>
-                            <li><a><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></li>
+                            <li><a href="https://www.facebook.com/filinovartem" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'facebook']} /></a></li>
+                            <li><a href="https://www.instagram.com/artemfilinov/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'instagram']} /></a></li>
+                            <li><a href="https://github.com/Johnnypanda" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'github']} /></a></li>
+                            <li><a href="https://www.linkedin.com/in/artemfilinov/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></li>
                         </ul>
                     </nav>
                 </div>

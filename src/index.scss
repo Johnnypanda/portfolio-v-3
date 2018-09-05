@@ -204,8 +204,8 @@ cursor: pointer;
     right: 0;
     z-index: 10;
     height: 125px;
-    transition: top 0.2s ease-in;
-    will-change: height;
+    transition: top 0.3s ease;
+    will-change: position;
 
     &__nav{
         ul{
@@ -235,6 +235,7 @@ cursor: pointer;
     &__right {
         background: $mainGrey;
         position: relative;
+        font-size: 1rem;
     }
 
     &__site-name {
@@ -267,13 +268,14 @@ cursor: pointer;
     position: absolute;
     cursor: pointer;
     padding: 21px;
-    margin-right: 40px;
+    margin: 20px 40px 0px 0px;
     right: 0;
-    top: 0;
+    top: -0;
     span {
       display: block;
       position: absolute;
-      height: 2.22px * $hamsizemultiplier;
+      top: 0;
+      height: 2.2px * $hamsizemultiplier;
       width: 100%;
       background: $hoverColor none repeat scroll 0% 0%;
       opacity: 1;
@@ -564,8 +566,12 @@ cursor: pointer;
         }
 
         a {
-        font-size: 4rem;
+        font-size: 1.5rem;
         color: $hoverColor;
+
+            @include atMedium {
+                font-size: 4rem;
+            }
         }
 
         a:hover {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 class Portfolio extends Component {
     render(){
         return(
@@ -15,7 +15,7 @@ class Portfolio extends Component {
                             <article>
                                 <a href={project.url} target="_blank">
                                     <figure>
-                                        <img alt={project.name} src={project.image}/>
+                                        <LazyLoadImage effect="opacity" alt={project.name} src={project.image}/>
                                         <div className="portfolio_arrow">
                                             <span></span>
                                         </div>
