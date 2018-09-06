@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -26,7 +26,7 @@ class App extends Component {
           name: 'Portfolio Site Template',
           image: '/images/portfolio-2.png',
           description: 'JavaScript, Webpack, Babel, Scss, PostCss',
-          url: ''
+          url: 'https://github.com/Johnnypanda/portfolio-v-2.0'
         },
         {
           name: 'Portfolio Site Template 2',
@@ -56,19 +56,19 @@ class App extends Component {
           name: 'Book Tracking App: MyReads',
           image: '/images/book-tracking.png',
           description: 'React, ES6, Webpack, Babel, API, JSON',
-          url: ''
+          url: 'https://github.com/Johnnypanda/book-tracking-app'
         },
         {
           name: 'Github Profile Viewer',
           image: '/images/github-viewer.png',
           description: 'React, ES6, Webpack, Babel, API, JSON',
-          url: ''
+          url: 'https://github.com/Johnnypanda/react-github-profile-viewer'
         },
         {
           name: 'Youtube Viewer',
           image: '/images/youtube-viewer.png',
           description: 'React, ES6, Webpack, Babel, API, JSON',
-          url: ''
+          url: 'https://github.com/Johnnypanda/react-youtube-viewer'
         }
         
       ]
